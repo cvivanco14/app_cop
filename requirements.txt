@@ -1,7 +1,6 @@
 plotly.express
 pandas
 numpy
-plotly.graph_objects
 streamlit
 base64
 pytz

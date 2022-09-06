@@ -65,9 +65,6 @@ sec03=""
 d = {'user': ["admin","inspector","fleet1","fleet2","fleet3"], 'pass': ["Admin2022","GOT2020","Arya2022","Sansa2021","Daenerys2020"]}
 df_users = pd.DataFrame(data=d)
 
-
-
-
 ###############################################################################
 #1. User   login                                                              #
 ###############################################################################
@@ -77,9 +74,9 @@ st.sidebar.image(image, channels="BGR")
     
 st.sidebar.title("Login")
 
-user = st.sidebar.text_input("Ingresar usuario", value='', max_chars=None, key=None, type='default')
+user = st.sidebar.text_input("Username", value='', max_chars=None, key=None, type='default')
 
-passw = st.sidebar.text_input("Ingresar password", value='', max_chars=None, key=None, type='password')
+passw = st.sidebar.text_input("Password", value='', max_chars=None, key=None, type='password')
 
 
 try:
@@ -92,9 +89,9 @@ if len(log0)!=1:
   log= False
 
 if log == False and user!="" and passw!="":
-  st.sidebar.error('Usuario o contraseña incorrectos')
+  st.sidebar.error('User or password incorrect')
 if log == True:
-  st.sidebar.success('Hola {u}, te logeaste correctamente!'.format(u=user))
+  st.sidebar.success('Hi {u}, you enter succesfully!'.format(u=user))
   
   st.sidebar.markdown('''
               <hr style="border:1.75px solid black"> </hr>
@@ -103,16 +100,13 @@ if log == True:
   ###############################################################################
   #2. Sección a seleccionar                                                     #
   ###############################################################################
-  seccion= ["Control y Seguimiento", "Calidad de datos", 'Base de datos EBS','Supervisión interna','Tiempos']
-  subseccion1=["i. Hoja de ruta", "ii. Reporte de indicadores"]
-  subseccion2=["Evaluación expost críticas", "Indicadores de trabajo de campo", "Indicadores de no respuesta al ítem", "Indicadores de registros sistemáticos", "Control de calidad de datos","Indicadores de trabajo de campo", "Indicadores de registros sistemáticos"] 
+  section= ["Day 1", "Day 2", 'Day 3','Day 4','Day 5','Day 6','Day 7','Day 8','Day 9','Day 10']
+  subsection1=["i. Type-in information", "ii. Overall Reports"]
 
-  st.sidebar.title("Selección de reporte")
-  st.sidebar.markdown('''Seleccione la sección y subsección del reporte que desea analizar.''')
+  st.sidebar.title("Section selection")
+  st.sidebar.markdown('''Select the day and section you wish to see.''')
 
-  #Selección página
-  pag_input = st.sidebar.selectbox('Seleccionar página:', seccion)
-  #Selección valor específico
-  if pag_input=="Control y Seguimiento": 
-   subseccion_input = st.sidebar.selectbox('Seleccionar reporte:', subseccion1)
-
+  #Selection of daily report 
+  pag_input = st.sidebar.selectbox('Select day:', section)
+  #Selection of section in the daily report
+  subsection_input = st.sidebar.selectbox('Select report:', subsection1)

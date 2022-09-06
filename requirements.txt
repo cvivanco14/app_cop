@@ -5,9 +5,6 @@ streamlit
 pytz
 datetime
 openpyxl
-openpyxl.styles
-openpyxl.styles.borders
-openpyxl.workbook
 string
 fun
 

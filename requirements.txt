@@ -2,7 +2,6 @@ plotly.express
 pandas
 numpy
 streamlit
-base64
 pytz
 datetime
 PIL

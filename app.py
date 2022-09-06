@@ -27,7 +27,7 @@ import string
 from openpyxl.styles import Border, Side, PatternFill
 import fun
 
-dir_main = "C:/Users/camiv/Documents/App Marcus/"
+dir_main = "/app/app_cop/"
 
 ###############################################################################
 #0. Inputs                                                                    #

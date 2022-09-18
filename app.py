@@ -72,14 +72,14 @@ except:
   pass
 
 if len(log0)!=1:
-  log= False
+ log= False
 
 if log == False and user!="" and passw!="":
-  st.sidebar.error('User or password incorrect')
+ st.sidebar.error('User or password incorrect')
 if log == True:
-  st.sidebar.success('Hi {u}, you enter succesfully!'.format(u=user))
+ st.sidebar.success('Hi {u}, you enter succesfully!'.format(u=user))
   
-  st.sidebar.markdown('''
+ st.sidebar.markdown('''
               <hr style="border:1.75px solid black"> </hr>
               ''', unsafe_allow_html=True)
 
@@ -87,7 +87,7 @@ if log == True:
 ###############################################################################
 #A. Fleets                                                                    #
 ###############################################################################
-if user == "fleet1": 
+ if user == "fleet1": 
     
 ###############################################################################
 #2. Section selection                                                         #
@@ -2582,7 +2582,7 @@ accumulated)''')
 ###############################################################################
 #A. Fleets                                                                    #
 ###############################################################################
-if user == "fleet2": 
+ if user == "fleet2": 
     
 ###############################################################################
 #2. Section selection                                                         #
@@ -5030,7 +5030,7 @@ accumulated)''')
 ###############################################################################
 #A. Fleets                                                                    #
 ###############################################################################
-if user == "fleet3": 
+ if user == "fleet3": 
     
 ###############################################################################
 #2. Section selection                                                         #
